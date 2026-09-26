@@ -1,23 +1,85 @@
 aid: artera-decisionrisk-analysis
+
 name: Artera Decisionrisk Analysis
-description: 'Artera Decisionrisk Analysis is a company surfaced via the API Evangelist harvest backlog
-  (source: secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://artera.ai/wp-content/uploads/img_hero_histopathology-scan@2x_601x486_acf_cropped.webp
+
+description: 'Artera Decisionrisk Analysis, operating as ArteraAI, provides personalized precision medicine and AI-driven cancer therapy solutions. The company offers a multimodal AI platform for clinicians and patients, including diagnostic tests for prostate and breast cancer, and supports HIPAA-compliant data handling. Artera aims to improve outcomes through advanced analytics and regulatory‑approved medical software.'
+
 url: https://raw.githubusercontent.com/api-evangelist/artera-decisionrisk-analysis/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
+- Healthcare
+- AI
+- PrecisionMedicine
+- Oncology
+- Diagnostics
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/artera-decisionrisk-analysis-hosts.yml
+- type: Vendors
+  url: vendors/artera-decisionrisk-analysis-vendors.yml
+- type: TrustCenter
+  url: https://trust.artera.ai/
+- type: StatusPage
+  url: https://status.artera.ai/
+- type: Security
+  url: https://artera.ai/security
+- type: Newsroom
+  url: https://artera.ai/news/mind-the-gap
+- type: VulnerabilityDisclosure
+  url: security/artera-decisionrisk-analysis-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/artera-decisionrisk-analysis-domain-security.yml
 - type: Website
-  url: https://www.hiive.com/securities/artera-decisionrisk-analysis-stock
+  url: https://artera.ai
+- type: Documentation
+  url: https://artera.ai/our-company
+- type: APIReference
+  url: https://artera.ai/our-company
+- type: GettingStarted
+  url: https://artera.ai/for-clinicians
+- type: Support
+  url: https://artera.ai/contact-us
+- type: TermsOfService
+  url: https://artera.ai/terms-conditions
+- type: PrivacyPolicy
+  url: https://artera.ai/privacy-policy
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL or other machine-readable contracts were found on the API host.
+  evidence:
+    - url: https://api.artera.ai/openapi.json
+      status: 404
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
